@@ -17,6 +17,8 @@ namespace PhysBAM{
     GRID<TV> uniform_grid;
     ARRAY<T,TV_INT> node_velocity;
     ARRAY<T,TV_INT> mass;
+    int first_frame,last_frame;
+
     std::vector<GRID<TV>::INDEX> adj_nodes;//the adjacent nodes' index for each particle;
 
     Snow_Scene();
